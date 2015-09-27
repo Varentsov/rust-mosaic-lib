@@ -1,0 +1,6 @@
+target
+Cargo.lock
+images_db
+db.bin
+mosaic.rb
+results
