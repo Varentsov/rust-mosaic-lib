@@ -351,13 +351,13 @@ pub extern fn main_work(path_to_proc_image: *const libc::c_char, scan: bool, pat
     if single {
         result = match process_image_single(&file_path, &db) {
             Ok(res) => res,
-            Err(_) => {-1},
+            Err(_) => {return -1},
         };
     }
     else {
         result = match process_image(&file_path, db) {
             Ok(res) => res,
-            Err(_) => {-1},
+            Err(_) => {return -1},
         };
     }
 
